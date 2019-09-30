@@ -1,0 +1,7 @@
+{
+  "name": "gpkg-optimizer",
+  "private": true,
+  "dependencies": {
+    "@ngageoint/geopackage-mobile-optimizer": "^2.0.3"
+  }
+}
