@@ -13,7 +13,7 @@ You will need to have a somewhat recent version of Node.js installed; you can do
 1. [download this utility, as a ZIP file](https://github.com/TeslaGov/gpkg-optimizer/archive/master.zip)
 2. extract the ZIP to a location of your choosing
 3. move to the location where you extracted the zip
-4. run `npm i` to install the required dependencies
+4. in a terminal, run `npm i` to install the required dependencies
 
 ## Usage
 
