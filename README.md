@@ -12,18 +12,18 @@ You will need to have a somewhat recent version of Node.js installed; you can do
 
 1. [download this utility, as a ZIP file](https://github.com/TeslaGov/gpkg-optimizer/archive/master.zip)
 2. extract the ZIP to a location of your choosing
-3. move to the location where you extracted the zip
+3. move to the location where you extracted the zip: e.g. `cd /home/jim/desktop`
 4. in a terminal, run `npm i` to install the required dependencies
 
 ## Usage
 
 Pre-process _every_ geopackage before you upload it using the instructions below.
 
-1. open a terminal and navigate to the location where you extracted the ZIP
+1. open a terminal and navigate to the location where you extracted the ZIP, e.g. `cd /home/jim/desktop/gpkg-optimizer`
 2. execute the `optimize` script, giving two arguments: the input GPKG path and the output GPKG path
 
 ```bash
-./optimize '<input_gpkg_path>' '<output_gpkg_path>'
+./optimize 'input_gpkg_path' 'output_gpkg_path'
 ```
 
 3. this may take a lot of time depending on the complexity of the Geopackage you are processing -- be patient
@@ -32,11 +32,11 @@ Pre-process _every_ geopackage before you upload it using the instructions below
 ### Example
 
 Given:
-- you have extracted the ZIP to `/opt/gpkg-optimizer`
-- you have a Geopackage you'd like to process and it is stored at `/home/my_geopackage.gpkg`
+- you have extracted the ZIP to `/home/jim/desktop/gpkg-optimizer`
+- you have a Geopackage you'd like to process and it is stored at `/home/jim/desktop/my_geopackage.gpkg`
 
 Execute the following commands within your terminal:
 
-1. move to the location where you extracted the zip: `cd /opt/gpkg-optimizer`
-2. optimize the Geopackage: `./optimize '/home/my_geopackage.gpkg' '/home/my_geopackage_optimized.gpkg'`
-3. upload `/home/my_geopackage_optimized.gpkg` to MAGE
+1. move to the location where you extracted the zip: `cd /home/jim/desktop/gpkg-optimizer`
+2. optimize the Geopackage: `./optimize '/home/jim/desktop/my_geopackage.gpkg' '/home/jim/desktop/my_geopackage_optimized.gpkg'`
+3. upload `/home/jim/desktop/my_geopackage_optimized.gpkg` to MAGE
