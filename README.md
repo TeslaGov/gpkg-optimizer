@@ -20,10 +20,10 @@ You will need to have a somewhat recent version of Node.js installed; you can do
 Pre-process _every_ geopackage before you upload it using the instructions below.
 
 1. open a terminal and navigate to the location where you extracted the ZIP, e.g. `cd /home/jim/desktop/gpkg-optimizer`
-2. execute the `optimize` script, giving two arguments: the input GPKG path and the output GPKG path
+2. execute the `optimize.sh` script, giving two arguments: the input GPKG path and the output GPKG path
 
 ```bash
-./optimize 'input_gpkg_path' 'output_gpkg_path'
+./optimize.sh 'input_gpkg_path' 'output_gpkg_path'
 ```
 
 3. this may take a lot of time depending on the complexity of the Geopackage you are processing -- be patient
@@ -38,5 +38,5 @@ Given:
 Execute the following commands within your terminal:
 
 1. move to the location where you extracted the zip: `cd /home/jim/desktop/gpkg-optimizer`
-2. optimize the Geopackage: `./optimize '/home/jim/desktop/my_geopackage.gpkg' '/home/jim/desktop/my_geopackage_optimized.gpkg'`
+2. optimize the Geopackage: `./optimize.sh '/home/jim/desktop/my_geopackage.gpkg' '/home/jim/desktop/my_geopackage_optimized.gpkg'`
 3. upload `/home/jim/desktop/my_geopackage_optimized.gpkg` to MAGE
